@@ -296,5 +296,7 @@
   $(window).on("resize", function(){
   });
 
+  
+
 
 })(jQuery);

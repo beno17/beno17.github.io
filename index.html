@@ -30,7 +30,7 @@
             <div class="container">
                 <!-- Brand -->
                 <a class="navbar-brand" href="#">
-                    <img class="logo-dark bg-black rounded-2 p-1" width="150" src="assets/img/logo.png" title="" alt="">
+                    <img class="logo-dark bg-black rounded-2 p-2 shadow-lg" width="150" src="assets/img/logo.png" title="" alt="">
                     <img class="logo-light"  width="150" src="assets/img/logo.png" title="" alt="">
                 </a>
                 <!-- / -->
@@ -54,7 +54,8 @@
                 <!-- / -->
                 <!-- Top Menu -->
                 <div class="ms-auto d-none d-lg-block">
-                    <a class="px-btn px-btn-theme2" data-scroll-nav="4" href="#contactus"> <dotlottie-player src="https://lottie.host/dd436d95-ca30-46f5-8049-2e002e6ef3cd/9XCfC6B1Hy.json" background="transparent" speed="1" style="width: 20px; height: 20px;" loop autoplay></dotlottie-player>
+                    <a class="px-btn px-btn-theme2 shadow" id="cvd" data-scroll-nav="4" href="#contactus"> 
+                        <dotlottie-player src="https://lottie.host/dd436d95-ca30-46f5-8049-2e002e6ef3cd/9XCfC6B1Hy.json" background="transparent" speed="1" style="width: 20px; height: 20px;" loop autoplay></dotlottie-player>
                          <!-- <i class="bi-download"></i> -->
                     </a>
                 </div>
@@ -72,36 +73,36 @@
                     <div class="col-lg-6 col-xl-5 d-flex">
                         <div class="home-intro d-flex flex-column">
                             <div class="mt-auto">
-                                <h6>👋 Je suis <span id="type-it"></span></h6>
-                                <h6><span>DELLOUH Benoit</span></h6>
-                                <p class="pe-lg-5">Développeur spécialisé dans la conception et Réalisation de solutions numériques Web</p>
+                                <h6>👋 Salut Je suis  <span id="type-it"></span></h6>
+                                <h6><span id="myanim"class="ml3" >DELLOUH Benoit</span></h6>
+                                <p class="pe-lg-5" id="typed">Développeur spécialisé dans la conception et Réalisation de solutions numériques Web</p>
                                 <div class="btn-bar">
                                     <a class="px-btn px-btn-theme" href="#contactus">Me contacter<i class="bi-arrow-up-right-circle"></i> </a>
                                 </div>
                             </div>
                             <div class="mt-auto">
                                 <div class="rating">
-                                    <i class="bi-star-fill"></i> 4.8 Average Session Rating
+                                    <i class="bi-star-fill"></i> 3 ans d'expériences
                                 </div>
                                 <div class="row g-2">
                                     <div class="col-2 col-sm-2 col-md-2">
                                         <div class="feature-box-01">
-                                            <img src="assets/img/figma.png" title="" alt="">
+                                            <img src="assets/img/uml.png" title="" alt="">
                                         </div>
                                     </div>
                                     <div class="col-2 col-sm-2 col-md-2">
                                         <div class="feature-box-01">
-                                            <img src="assets/img/adobe_photoshop.png" title="" alt="">
+                                            <img src="assets/img/vscode.png" title="" alt="">
                                         </div>
                                     </div>
                                     <div class="col-2 col-sm-2 col-md-2">
                                         <div class="feature-box-01">
-                                            <img src="assets/img/sketch.png" title="" alt="">
+                                            <img src="assets/img/git.png" title="" alt="">
                                         </div>
                                     </div>
                                     <div class="col-2 col-sm-2 col-md-2">
                                         <div class="feature-box-01">
-                                            <img src="assets/img/html_5.png" title="" alt="">
+                                            <img src="assets/img/cloud.png" title="" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -109,7 +110,7 @@
                         </div>
                     </div>
                     <div class="col-lg-5 col-xl-7">
-                        <div class="home-image text-center pt-5 pt-lg-0">
+                        <div class="home-image text-center pt-5 pt-lg-0" id="img-ban">
                             <img src="assets/img/home-banner.png" title="" alt="">
                         </div>
                     </div>
@@ -147,12 +148,44 @@
         <section data-scroll-index="1" class="section services-section">
             <div class="container">
                 <div class="row gy-5">
-                    <div class="col-lg-6 pe-lg-5">
+                    <div class="col-lg-6 ps-lg-5">
+                        <div class="services-left">
+                            <div class="section-heading">
+                                <h6>MES SERVICES</h6>
+                                <h3>CONCEPTION DE SOLUTIONS NUMERIQUES WEB</h3>
+                            </div>
+                            <div class="s-action pb-4 text-center">
+                                <img src="assets/img/services.png" title="" alt="" id="img-serv">
+                            </div>
+                            <div class="row counter g-2 g-sm-3">
+                                <div class="col-6">
+                                    <div class="counter-box " style="background-color: rgba(68, 140, 116, 0.1);">   
+                                        <span class="count h1 after-pluse" data-to="0" data-speed="03">03</span>
+                                        <h6>Années d'experience</h6>
+                                    </div>
+                                </div>
+                                <!-- <div class="col-4">
+                                    <div class="counter-box" style="background-color: rgba(237, 80, 80, 0.1);">
+                                        <span class="count h1 after-pluse" data-to="200" data-speed="200">200</span>
+                                        <h6>Happy Clients</h6>
+                                    </div>
+                                </div> -->
+                                <div class="col-6">
+                                    <div class="counter-box" style="background-color: rgba(63, 127, 202, 0.1);">
+                                        <span class="count h1 after-pluse" data-to="0" data-speed="12">12</span>
+                                        <h6>Projets completés</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-1 ps-lg-5"></div>
+                    <div class="col-lg-5 pe-lg-5">
                         <div class="services-right">
                             <div class="feature-box-02">
                                 <div class="text">
-                                    <h6>Integrateur Web</h6>
-                                    <p>Intégration de template HTML/CSS BOOTSTRAP notament la mise en place des interfaces des differentes vues dans un projet</p>
+                                    <h6>Créateur de Site Vitrine</h6>
+                                    <p>Création de site de branding d'entreprise, portfolio, site d'évennement sur mesure</p>
                                 </div>
                                 <div class="icon">
                                     <a href="#services_01" class="px_modal">
@@ -209,8 +242,8 @@
                             </div>
                             <div class="feature-box-02">
                                 <div class="text">
-                                    <h6>developpeur de Site Vitrine</h6>
-                                    <p>Création de site de branding d'entreprise, portfolio, site d'évennement sur mesure</p>
+                                    <h6>Integrateur Web</h6>
+                                    <p>Intégration de template HTML/CSS BOOTSTRAP notament la mise en place des interfaces des differentes vues dans un projet</p>
                                 </div>
                                 <div class="icon">
                                     <a href="#services_02" class="px_modal">
@@ -383,37 +416,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 ps-lg-5">
-                        <div class="services-left">
-                            <div class="section-heading">
-                                <h6>MES SERVICES</h6>
-                                <h3>CONCEPTION DE SOLUTIONS NUMERIQUES WEB</h3>
-                            </div>
-                            <div class="s-action pb-4 text-center">
-                                <img src="assets/img/services.png" title="" alt="">
-                            </div>
-                            <div class="row counter g-2 g-sm-3">
-                                <div class="col-6">
-                                    <div class="counter-box" style="background-color: rgba(68, 140, 116, 0.1);">
-                                        <span class="count h1 after-pluse" data-to="03" data-speed="03">03</span>
-                                        <h6>Années d'experience</h6>
-                                    </div>
-                                </div>
-                                <!-- <div class="col-4">
-                                    <div class="counter-box" style="background-color: rgba(237, 80, 80, 0.1);">
-                                        <span class="count h1 after-pluse" data-to="200" data-speed="200">200</span>
-                                        <h6>Happy Clients</h6>
-                                    </div>
-                                </div> -->
-                                <div class="col-6">
-                                    <div class="counter-box" style="background-color: rgba(63, 127, 202, 0.1);">
-                                        <span class="count h1 after-pluse" data-to="350" data-speed="350">350</span>
-                                        <h6>Projets completés</h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <!-- old services place -->
                 </div>
             </div>
         </section>
@@ -430,7 +433,7 @@
                 <div class="row gy-4">
                     <div class="col-lg-6">
                         <div class="section-heading">
-                            <h3 class="text-white">Expériences Professionnelles & Skill</h3>
+                            <h3 class="text-white">Expériences Professionnelles & Compétences</h3>
                         </div>
                         <div class="experiance-box">
                             <ul>
@@ -511,17 +514,17 @@
                 <div class="row section-heading">
                     <div class="col-lg-7">
                         <h3>MES RECENTS PROJETS</h3>
-                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p class="text">Voici une sélection de mes projets récents qui mettent en valeur mon expertise et ma passion pour le travail bien fait.</p>
                     </div>
                 </div>
                 <div class="lightbox-gallery">
                     <div class="row g-3 portfolio-content">
                         <div class="col-sm-6 col-lg-4 grid-item">
-                            <div class="portfolio-box bg-1">
+                            <div class="portfolio-box bg-1 shadow" style="animation: float-serv 6s ease-in-out infinite;">
                                 <div class="portfolio-text">
                                     <h6>SISE INRAB</h6>
                                     <p>Developpement du SISE de l'INRAB</p>
-                                    <a class="gallery-link" href="assets/img/project-1.jpg"><i class="bi-arrow-up-right-circle"></i></a>
+                                    <a class="gallery-link" href="assets/img/inrab.png"><i class="bi-arrow-up-right-circle"></i></a>
                                 </div>
                                 <div class="portfolio-img">
                                     <img src="assets/img/inrab.png" title="" alt="">
@@ -529,7 +532,7 @@
                             </div>
                         </div>
                         <div class="col-sm-6 col-lg-4 grid-item">
-                            <div class="portfolio-box bg-2">
+                            <div class="portfolio-box bg-2 shadow" style="animation: float-serv 8s ease-in-out infinite;">
                                 <div class="portfolio-text">
                                     <h6>UNSTIM</h6>
                                     <p>developpement d'API pour le SIG de l'UNSTIM</p>
@@ -541,11 +544,11 @@
                             </div>
                         </div>
                         <div class="col-sm-6 col-lg-4 grid-item">
-                            <div class="portfolio-box bg-3">
+                            <div class="portfolio-box bg-3 shadow" style="animation: float-serv 6s ease-in-out infinite;">
                                 <div class="portfolio-text">
                                     <h6>SISE ABSSA</h6>
                                     <p>Developpement du SISE de l'ABSSA</p>
-                                    <a class="gallery-link" href="assets/img/project-3.jpg"><i class="bi-arrow-up-right-circle"></i></a>
+                                    <a class="gallery-link" href="assets/img/abssa.png"><i class="bi-arrow-up-right-circle"></i></a>
                                 </div>
                                 <div class="portfolio-img">
                                     <img src="assets/img/abssa.png" title="" alt="">
@@ -553,11 +556,11 @@
                             </div>
                         </div>
                         <div class="col-sm-6 col-lg-4 grid-item">
-                            <div class="portfolio-box bg-4">
+                            <div class="portfolio-box bg-4 shadow" style="animation: float-serv 6s ease-in-out infinite;">
                                 <div class="portfolio-text">
                                     <h6>ECOPRO</h6>
                                     <p>Mobile App, App Design</p>
-                                    <a class="gallery-link" href="assets/img/project-4.jpg"><i class="bi-arrow-up-right-circle"></i></a>
+                                    <a class="gallery-link" href="assets/img/ecopro.png"><i class="bi-arrow-up-right-circle"></i></a>
                                 </div>
                                 <div class="portfolio-img">
                                     <img src="assets/img/ecopro.png" title="" alt="">
@@ -565,11 +568,11 @@
                             </div>
                         </div>
                         <div class="col-sm-6 col-lg-4 grid-item">
-                            <div class="portfolio-box bg-5">
+                            <div class="portfolio-box bg-5 shadow" style="animation: float-serv 8s ease-in-out infinite;">
                                 <div class="portfolio-text">
                                     <h6>SIG FNDA</h6>
                                     <p>Mobile App, App Design</p>
-                                    <a class="gallery-link" href="assets/img/project-5.jpg"><i class="bi-arrow-up-right-circle"></i></a>
+                                    <a class="gallery-link" href="assets/img/fnda.png"><i class="bi-arrow-up-right-circle"></i></a>
                                 </div>
                                 <div class="portfolio-img">
                                     <img src="assets/img/fnda.png" title="" alt="">
@@ -577,14 +580,14 @@
                             </div>
                         </div>
                         <div class="col-sm-6 col-lg-4 grid-item">
-                            <div class="portfolio-box bg-1">
+                            <div class="portfolio-box bg-1 shadow" style="animation: float-serv 6s ease-in-out infinite;">
                                 <div class="portfolio-text">
-                                    <h6>Mobile App Design</h6>
+                                    <h6>SISE MCVT</h6>
                                     <p>Mobile App, App Design</p>
-                                    <a class="gallery-link" href="assets/img/project-6.jpg"><i class="bi-arrow-up-right-circle"></i></a>
+                                    <a class="gallery-link" href="assets/img/sisemcvt.png"><i class="bi-arrow-up-right-circle"></i></a>
                                 </div>
                                 <div class="portfolio-img">
-                                    <img src="assets/img/project-6.jpg" title="" alt="">
+                                    <img src="assets/img/sisemcvt.png" title="" alt="">
                                 </div>
                             </div>
                         </div>
@@ -603,9 +606,14 @@
             </div>
             <div class="container position-relative">
                 <div class="row section-heading justify-content-center">
-                    <div class="col-lg-6 text-center">
-                        <h3 class="text-white pb-3">Testimonials</h3>
-                        <p class="text-white m-0 text-white-75">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="col-lg-8 text-center">
+                        <h3 class="text-white pb-5 ml4">
+                            <span class=" text-white letters letters-1">Ouvert</span>
+                            <span class=" text-white letters letters-2">Au</span>
+                            <span class=" text-white letters letters-3">Freelance !</span>
+                        </h3>
+                        <p class="text-white mt-5 text-white-75">Je suis disponible pour des missions freelance et je cherche à m'engager dans des projets variés qui stimulent ma créativité et mon expertise. Si vous avez besoin d'un professionnel dévoué et compétent, contactez-moi pour discuter de vos besoins.
+                        </p>
                     </div>
                 </div>
                 <div class="row justify-content-center">
@@ -663,100 +671,70 @@
                     <div class="col-lg-6">
                         <div class="contact-heading">
                             <div class="section-heading">
-                                <h3>Prendre Contact<br> Avec moi </h3>
-                                <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <h3>Contactez moi et<br>Discutons de votre projet</h3>
+                                <p class="text">Pour toute demande de collaboration, information ou simplement pour échanger, vous pouvez me joindre à <a href="mailto:dellouh.benoit17@gmail.com">dellouh.benoit17@gmail.com</a>.</p>
+                                <div class="row flex-lg-row-reverse align-items-center">
+                                    <div class="contact-social">
+                                        <h5>Mes Réseaux</h5>
+                                        <ul>
+                                            <li>
+                                                <a href="https://wa.me//+22961061940" target="_blank"><script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+
+                                                    <dotlottie-player src="https://lottie.host/8687f121-5f47-4536-bde4-bb7abb26ebd2/hWOxPa1PyO.json" background="transparent" speed="1" style="width: 20px; height: 20px;" loop autoplay></dotlottie-player></a>
+                                            </li>
+                                            <li>
+                                                <a href="https://github.com/beno17" target="_blank"><script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+
+                                                    <dotlottie-player src="https://lottie.host/b8770b8b-aa05-46ba-930e-bcf7e5d3d420/5DtGNkIcXk.json" background="transparent" speed="1" style="width: 20px; height: 20px;" loop autoplay></dotlottie-player></a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.linkedin.com/in/benoit-dellouh-48019a22a/" target="_blank"><script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+
+                                                    <dotlottie-player src="https://lottie.host/0fb4b4ec-4d76-419d-afb3-0b1cf46633a3/SvhvsCc4Sl.json" background="transparent" speed="1" style="width: 20px; height: 20px;" loop autoplay></dotlottie-player></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
+                           
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="contact-form">
+                        <div class="contact-form border-2 shadow"  style="border-color: #bdd2cb;">
                             <form id="contact-form" method="POST">
                                 <div class="row gx-3 gy-4">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label class="form-label">First name</label>
-                                            <input name="Name" id="name" placeholder="Name *" class="form-control" type="text">
+                                            <label class="form-label">Nom Prenom</label>
+                                            <input name="Name" id="name" placeholder="Nom *" class="form-control" type="text">
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label class="form-label">Your Email</label>
+                                            <label class="form-label">Email</label>
                                             <input name="Email" id="email" placeholder="Email *" class="form-control" type="email">
                                         </div>
                                     </div>
                                     <div class="col-12">
                                         <div class="form-group">
-                                            <label class="form-label">Subject</label>
-                                            <input name="Subject" id="subject" placeholder="Subject *" class="form-control" type="text">
+                                            <label class="form-label">Sujet</label>
+                                            <input name="Subject" id="subject" placeholder="Sujet *" class="form-control" type="text">
                                         </div>
                                     </div>
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <label class="form-label">Your message</label>
-                                            <textarea name="message" id="message" placeholder="Your message *" rows="4" class="form-control"></textarea>
+                                            <label class="form-label">Votre mesage</label>
+                                            <textarea name="message" id="message" placeholder="Votre message *" rows="4" class="form-control"></textarea>
                                         </div>
                                     </div>
                                     <div class="col-md-12">
                                         <div class="send">
-                                            <button class="px-btn px-btn-dark" type="button" value="Send"> Send Message</button>
+                                            <button class="px-btn px-btn-dark" type="button" value="Send"> Envoyer </button>
                                         </div>
                                     </div>
                                 </div>
                             </form>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End Contact Section -->
-        <!-- Contact Section -->
-        <section class="section pb-0 bg-dark">
-            <div class="container">
-                <div class="row flex-lg-row-reverse align-items-center">
-                    <div class="col-lg-5">
-                        <div class="contact-info">
-                            <h3>Contactez moi et discutons de votre projet</h3>
-                            <ul>
-                                <li>
-                                    <div class="icon">
-                                        <i class="bi-chat-left-dots-fill"></i>
-                                    </div>
-                                    <div class="text">
-                                        <label>Email</label>
-                                        <p><a href="mailto:dellouh.benoit17@gmail.com">dellouh.benoit17@gmail.com</a></p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="icon">
-                                        <i class="bi-compass"></i>
-                                    </div>
-                                    <div class="text">
-                                        <label>Localisation</label>
-                                        <p>Benin Cotonou</p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="contact-social">
-                            <h5>Let’s Connect</h5>
-                            <ul>
-                                <li>
-                                    <a href="#"><i class="fab fa-whatsapp"></i></a>
-                                </li>
-                                <li>
-                                    <a href="https://github.com/beno17" target="_blank"><i class="fab fa-github"></i></a>
-                                </li>
-                                <li>
-                                    <!-- <a href="#"><i class="fab fa-facebook"></i></a> -->
-                                </li>
-                                <li>
-                                    <a href="https://www.linkedin.com/in/benoit-dellouh-48019a22a/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-7 pe-lg-5 text-center">
-                        <img src="assets/img/contact-banner.png" title="" alt="">
                     </div>
                 </div>
             </div>
@@ -770,15 +748,15 @@
             <div class="row align-items-center">
                 <div class="col-md-6 py-2">
                     <div class="nav justify-content-center justify-content-md-start">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                        <a href="https://wa.me//+22961061940" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://github.com/beno17" target="_blank"><i class="fab fa-github"></i></a>
+                        <!-- <a href="#"><i class="fab fa-instagram"></i></a> -->
+                        <a href="https://www.linkedin.com/in/benoit-dellouh-48019a22a/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <!-- <a href="#"><i class="fab fa-pinterest"></i></a> -->
                     </div>
                 </div>
                 <div class="col-md-6 py-2 text-center text-md-end">
-                    <p class="m-0">© 2022 copyright all right reserved</p>
+                    <p class="m-0">© 2024 copyright all right reserved</p>
                 </div>
             </div>
         </div>
@@ -789,6 +767,121 @@
     <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/vendor/one-page/scrollIt.min.js"></script>
     <script src="assets/js/custom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+
+    <script>
+        // set up text to print, each item in array is new line
+var aText = new Array(
+"Développeur spécialisé dans la conception et ", 
+"Réalisation de solutions numériques Web",
+);
+var iSpeed = 100; // time delay of print out
+var iIndex = 0; // start printing array at this posision
+var iArrLength = aText[0].length; // the length of the text array
+var iScrollAt = 20; // start scrolling up at this many lines
+ 
+var iTextPos = 0; // initialise text position
+var sContents = ''; // initialise contents variable
+var iRow; // initialise current row
+ 
+function typewriter()
+{
+ sContents =  ' ';
+ iRow = Math.max(0, iIndex-iScrollAt);
+ var destination = document.getElementById("typed");
+ 
+ while ( iRow < iIndex ) {
+  sContents += aText[iRow++] + '<br />';
+ }
+ destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "_";
+ if ( iTextPos++ == iArrLength ) {
+  iTextPos = 0;
+  iIndex++;
+  if ( iIndex != aText.length ) {
+   iArrLength = aText[iIndex].length;
+   setTimeout("typewriter()", 500);
+  }
+ } else {
+  setTimeout("typewriter()", iSpeed);
+ }
+}
+
+
+typewriter();
+
+// Wrap every letter in a span
+var textWrapper = document.querySelector('#myanim');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml3 .letter',
+    opacity: [0,1],
+    easing: "easeInOutQuad",
+    duration: 1250,
+    delay: (el, i) => 50 * (i+1)
+  }).add({
+    targets: '.ml3',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 10000
+  });
+
+
+  var ml4 = {};
+ml4.opacityIn = [0,1];
+ml4.scaleIn = [0.2, 1];
+ml4.scaleOut = 3;
+ml4.durationIn = 800;
+ml4.durationOut = 600;
+ml4.delay = 500;
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml4 .letters-1',
+    opacity: ml4.opacityIn,
+    scale: ml4.scaleIn,
+    duration: ml4.durationIn
+  }).add({
+    targets: '.ml4 .letters-1',
+    opacity: 0,
+    scale: ml4.scaleOut,
+    duration: ml4.durationOut,
+    easing: "easeInExpo",
+    delay: ml4.delay
+  }).add({
+    targets: '.ml4 .letters-2',
+    opacity: ml4.opacityIn,
+    scale: ml4.scaleIn,
+    duration: ml4.durationIn
+  }).add({
+    targets: '.ml4 .letters-2',
+    opacity: 0,
+    scale: ml4.scaleOut,
+    duration: ml4.durationOut,
+    easing: "easeInExpo",
+    delay: ml4.delay
+  }).add({
+    targets: '.ml4 .letters-3',
+    opacity: ml4.opacityIn,
+    scale: ml4.scaleIn,
+    duration: ml4.durationIn
+  }).add({
+    targets: '.ml4 .letters-3',
+    opacity: 0,
+    scale: ml4.scaleOut,
+    duration: ml4.durationOut,
+    easing: "easeInExpo",
+    delay: ml4.delay
+  }).add({
+    targets: '.ml4',
+    opacity: 0,
+    duration: 500,
+    delay: 500
+  });
+    </script>
     <!-- end -->
 </body>
 <!-- Body End -->
